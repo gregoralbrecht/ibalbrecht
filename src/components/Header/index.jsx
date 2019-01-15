@@ -1,24 +1,43 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import { Link } from 'components/Link'
-import { Container } from 'components/Grid'
+import { OutboundLink } from 'components/Link'
+import { Container, Flex } from 'components/Grid'
+import Logo from 'components/Logo'
 
 import Wrapper from './Wrapper'
-import Title from './Title'
+import Menu from './Menu'
+import Item from './Item'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Wrapper as="header">
-    <Container maxWidth="700px">
-      <Title>
-        <Link to="/">{siteTitle}</Link>
-      </Title>
+    <Container maxWidth="900px">
+      <Flex
+        flexDirection={['column', 'row']}
+        alignItems={['flex-start', 'flex-end']}
+        justifyContent={['space-between']}
+      >
+        <Flex mr={3}>
+          <Logo />
+        </Flex>
+        <Flex mr={3}>
+          <Menu>
+            <Item>
+              <span>anrufen</span>
+              <OutboundLink to="tel:+496152955903" from="header">
+                +49 6152 955 903
+              </OutboundLink>
+            </Item>
+            <Item>
+              <span>schreiben</span>
+              <OutboundLink to="mailto:info@ibalbrecht.de" from="header">
+                info@ibalbrecht.de
+              </OutboundLink>
+            </Item>
+          </Menu>
+        </Flex>
+      </Flex>
     </Container>
   </Wrapper>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string.isRequired,
-}
 
 export default Header

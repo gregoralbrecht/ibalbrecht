@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider, theme } from 'util/style'
+import 'typeface-ibm-plex-sans'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
@@ -15,11 +16,11 @@ const Layout = ({ children }) => (
       <Container maxWidth="700px" px={3}>
         {children}
         <Box mt={3}>
-          <Footer>
+          {/* <Footer>
             Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </Footer>
+          </Footer> */}
         </Box>
       </Container>
     </>
