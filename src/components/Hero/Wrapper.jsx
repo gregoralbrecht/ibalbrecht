@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     line-height: 1.7;
     margin: 0;
     font-size: calc(20px + (44 - 20) * ((100vw - 320px) / (900 - 320)));
+    z-index: 10;
 
     @media screen and (min-width: 900px) {
       font-size: 44px;
@@ -20,6 +21,7 @@ const Wrapper = styled.div`
   }
 
   span {
+    display: initial;
     position: relative;
   }
 

@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     min-width: 320px !important;
     padding: 0;
     margin: 0;
-    background: hsl(210, 17%, 98%);
+    background: #f9fafb;
   }
 `
 

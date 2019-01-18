@@ -1,17 +1,17 @@
 module.exports = {
-  siteUrl: `https://www.example.com`,
-  siteTitle: `Gatsby Starter Styled`,
-  siteTitleAlt: `Gatsby Starter Styled`,
-  siteTitleShort: `Gatsby Styled`,
-  siteDescription: `Kick off your next, great Gatsby project with this starter.`,
+  siteUrl: `https://www.ibalbrecht.de`,
+  siteTitle: `Ingenieurbüro Horst-Dieter Albrecht`,
+  siteTitleAlt: `Ingenieurbüro Horst-Dieter Albrecht`,
+  siteTitleShort: `IB Albrecht`,
+  siteDescription: `Ingenieurbüro Horst-Dieter Albrecht — Ihr PC-Service-Partner im Rhein-Main-Gebiet`,
   manifest: {
-    themeColor: `#253688`,
-    backgroundColor: `#253688`,
+    themeColor: `#f9fafb`,
+    backgroundColor: `#f9fafb`,
   },
   googleAnalyticsId: `UA-XXXXX`,
-  facebook: `Your optional Facebook App ID`,
-  twitter: `Your Twitter username`,
+  facebook: ``,
+  twitter: ``,
   schema: {
-    author: `Jane Doe`,
+    author: `Horst-Dieter Albrecht`,
   },
 }

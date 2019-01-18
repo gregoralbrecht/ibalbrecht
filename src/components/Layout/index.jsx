@@ -14,6 +14,7 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
+      <GlobalStyles />
       <Container maxWidth="900px" px={3}>
         {children}
         <Box mt={3}>
