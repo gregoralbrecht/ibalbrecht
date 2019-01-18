@@ -64,6 +64,10 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
+      <noscript>
+        Nobody should ever see this. If someone does, something has gone
+        horribly wrong and everything is going to explode.
+      </noscript>
     </Helmet>
   )
 }
