@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
-      <Container maxWidth="700px" px={3}>
+      <Container maxWidth="900px" px={3}>
         {children}
         <Box mt={3}>
           {/* <Footer>
