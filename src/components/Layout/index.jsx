@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider, theme } from 'util/style'
+import GlobalStyles from 'util/style/GlobalStyles'
 import 'typeface-ibm-plex-sans'
 
 import Header from 'components/Header'

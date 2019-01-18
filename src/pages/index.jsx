@@ -25,7 +25,7 @@ const IndexPage = () => (
       </p>
       <p>
         Bei uns steht der persönliche Kontakt und die individuelle Betreuung
-        stets im Vordergrund
+        stets im Vordergrund.
       </p>
     </Flex>
   </Layout>

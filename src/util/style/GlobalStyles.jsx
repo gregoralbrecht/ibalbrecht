@@ -8,9 +8,10 @@ const GlobalStyles = createGlobalStyle`
   html,
   body {
     min-height: 100%;
-    min-width: 320px;
+    min-width: 320px !important;
     padding: 0;
     margin: 0;
+    background: hsl(210, 17%, 98%);
   }
 `
 

@@ -3,7 +3,7 @@ import Typography from 'typography'
 const typography = new Typography({
   title: 'ibalbrecht',
   baseFontSize: '18px',
-  baseLineHeight: 1.45,
+  baseLineHeight: 1.65,
   /* Use the system font stack as fallback */
   headerFontFamily: [
     'IBM Plex Sans',

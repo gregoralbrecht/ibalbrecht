@@ -6,9 +6,9 @@ const Item = styled.li`
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: ${themePx('fontSizes.1')};
+  font-size: ${themePx('fontSizes.2')};
   line-height: 1.3;
-  font-weight: 500;
+  font-weight: 'normal';
 
   & + & {
     margin-left: ${themePx('space.4')};
@@ -16,8 +16,8 @@ const Item = styled.li`
 
   a {
     color: ${themeGet('')};
-    font-size: ${themePx('fontSizes.1')};
-    font-weight: 600;
+    font-size: ${themePx('fontSizes.2')};
+    font-weight: 500;
   }
 `
 

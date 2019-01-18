@@ -1,9 +1,9 @@
-import styled, { themeGet } from 'util/style'
+import styled, { themeGet, themePx } from 'util/style'
 
 const Text = styled.span`
   color: ${themeGet('colors.grey.800')};
   font-weight: 500;
-  font-size: 16px;
+  font-size: ${themePx('fontSizes.2')};
   line-height: 1.3;
 `
 
