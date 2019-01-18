@@ -27,7 +27,9 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s — ${config.siteTitle}`}
+      titleTemplate={`%s — ${
+        config.siteTitle
+      } — Ihr PC-Service-Partner im Rhein-Main-Gebiet`}
       meta={[
         {
           name: `description`,
@@ -65,8 +67,8 @@ function SEO({ description, lang, meta, title }) {
     >
       <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
       <noscript>
-        Nobody should ever see this. If someone does, something has gone
-        horribly wrong and everything is going to explode.
+        {`Nobody should ever see this. If someone does, something has gone
+        horribly wrong and everything is going to explode.`}
       </noscript>
     </Helmet>
   )
