@@ -8,7 +8,7 @@ import { Flex } from 'components/Grid'
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO title="IBA" />
     <Hero>
       <H1>
         <span className="first-line">Ihr PC-Service-Partner im</span> <br />{' '}
