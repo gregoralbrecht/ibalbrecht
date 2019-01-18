@@ -14,4 +14,5 @@ module.exports = {
   schema: {
     author: `Horst-Dieter Albrecht`,
   },
+  defaultMetaImage: `/static/meta_img.png`,
 }

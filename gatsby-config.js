@@ -52,7 +52,7 @@ module.exports = {
         start_url: `/?utm_source=a2hs`,
         background_color: config.manifest.backgroundColor,
         theme_color: config.manifest.themeColor,
-        display: `standalone`,
+        display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
     },
