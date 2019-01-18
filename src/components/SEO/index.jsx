@@ -27,9 +27,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s — ${
-        config.siteTitle
-      } — Ihr PC-Service-Partner im Rhein-Main-Gebiet`}
+      titleTemplate={`%s — Ihr PC-Service-Partner im Rhein-Main-Gebiet`}
       meta={[
         {
           name: `description`,
