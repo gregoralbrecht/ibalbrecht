@@ -1,27 +1,34 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import styled, { themeGet, themePx } from 'util/style'
+import { Flex, Box } from 'components/Grid'
+import { Link } from 'components/Link'
 
-import { Box } from 'components/Grid'
+import Wrapper from './Wrapper'
 
-const StyledFooter = styled(Box)`
-  background: ${themeGet('colors.grey.200')};
-  padding: ${themePx('space.3')};
-  margin-bottom: ${themePx('space.3')};
-`
-
-const Footer = ({ children, ...props }) => (
-  <StyledFooter as="footer" {...props}>
-    {children}
-  </StyledFooter>
+const Footer = () => (
+  <Wrapper as="footer">
+    <Flex width="100%" flexDirection={['column', 'row']}>
+      <Box width={['100%', '33.33%']}>
+        <p>
+          Ingenieurbüro <br /> Horst-Dieter Albrecht
+        </p>
+      </Box>
+      <Box width={['100%', '33.33%']}>
+        <p>
+          Emil-von-Behring-Str. 10 <br /> 64521 Groß-Gerau
+        </p>
+      </Box>
+      <Box width={['100%', '33.33%']}>
+        <Link to="/impressum" from="footer">
+          Impressum
+        </Link>{' '}
+        <br />{' '}
+        <Link to="/datenschutz" from="footer">
+          Datenschutz
+        </Link>
+      </Box>
+    </Flex>
+  </Wrapper>
 )
-
-Footer.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
 
 export default Footer
