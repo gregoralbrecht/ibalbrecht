@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { ThemeProvider, theme } from 'util/style'
 import GlobalStyles from 'util/style/GlobalStyles'
 import 'typeface-ibm-plex-sans'
+import Helmet from 'react-helmet'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
@@ -14,6 +15,12 @@ const Layout = ({ children }) => (
       <Header />
       <GlobalStyles />
       <Container maxWidth="900px" px={3}>
+        <Helmet>
+          <noscript>
+            {`Nobody should ever see this. If someone does, something has gone
+        horribly wrong and everything is going to explode.`}
+          </noscript>
+        </Helmet>
         {children}
         <Box mt={3}>
           <Footer />
