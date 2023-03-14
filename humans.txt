@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Gregor Albrecht <hello@gregoralbrecht.com>
+
+# TECHNOLOGY COLOPHON
+
+    HTML & CSS
