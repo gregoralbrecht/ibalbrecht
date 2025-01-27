@@ -352,15 +352,15 @@ header {
   flex-direction: column;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+  padding-top: var(--container-padding);
+  padding-bottom: var(--container-padding);
   max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  padding-top: var(--container-padding);
   font-size: var(--step--1);
   width: 100%;
   flex-shrink: 0;
   gap: 40px;
-  padding-bottom: var(--space-l-xl);
 }
 
 @media screen and (min-width: 590px) {
@@ -378,7 +378,6 @@ header {
   text-decoration: none;
   color: var(--color-slate-12);
   font-size: 16px;
-  /* background: papayawhip; */
   position: relative;
 }
 
@@ -405,6 +404,10 @@ header {
 
 .logo:hover {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+img::selection {
+  background: transparent;
 }
 
 .blue-box {
@@ -568,12 +571,12 @@ footer a {
 .visually-hidden {
   position: absolute;
   border: 0;
-  width: 1;
-  height: 1;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: -1;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: "nowrap";
-  word-wrap: "normal";
+  white-space: nowrap;
+  word-wrap: normal;
 }
